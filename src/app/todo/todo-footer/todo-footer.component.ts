@@ -14,12 +14,8 @@ import { Todo } from '../models/todo.model';
 export class TodoFooterComponent implements OnInit {
   pendientes: number;
 
-  filtrosValidos: fromFiltro.filtrosValidos[] = [
-    'todos',
-    'completados',
-    'pendientes',
-  ];
-  filtroActual: fromFiltro.filtrosValidos;
+  filtrosValidos: string[] = ['todos', 'completados', 'pendientes'];
+  filtroActual: string;
 
   constructor(private store: Store<AppState>) {}
 

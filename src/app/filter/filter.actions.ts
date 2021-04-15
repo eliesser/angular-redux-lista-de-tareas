@@ -6,7 +6,7 @@ export type filtrosValidos = 'todos' | 'completados' | 'pendientes';
 
 export class SetFilterAction implements Action {
   readonly type = SET_FILTRO;
-  constructor(public filtro: string) {}
+  constructor(public filtro: filtrosValidos) {}
 }
 
 export type acciones = SetFilterAction;

@@ -12,7 +12,7 @@ import * as fromFiltro from '../../filter/filter.actions';
 })
 export class TodoListComponent implements OnInit {
   todos: Todo[] = [];
-  filtro: fromFiltro.filtrosValidos;
+  filtro: string;
 
   constructor(private store: Store<AppState>) {}
 

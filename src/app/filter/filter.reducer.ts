@@ -5,7 +5,7 @@ const estadoInicial: fromFiltros.filtrosValidos = 'todos';
 export function filtroReducer(
   state = estadoInicial,
   action: fromFiltros.acciones
-): string {
+): fromFiltros.filtrosValidos {
   switch (action.type) {
     case fromFiltros.SET_FILTRO:
       return action.filtro;
